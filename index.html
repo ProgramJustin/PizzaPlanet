@@ -8,8 +8,13 @@
     <title></title>
   </head>
   <body>
-    <divs class="container">
+    <div class="container-fluid">
+      <div class="header">
+        <h1>test</h1>
+      </div>
+      
       <div class="row">
+        <!-- SIZE OPTION -->
         <div class="col-md-8">
           <form action="index.html" >
             <div class="form-group">
@@ -17,6 +22,7 @@
               <label class="radio-inline"><input class="pieSize" id="pieMedium" type="radio" name="optradio" value="Medium">Medium</label>
               <label class="radio-inline"><input class="pieSize" id="pieLarge" type="radio" name="optradio" value="Large" checked>Large</label>
             </div>
+            <!-- PIZZA OPTIONS -->
             <div class="form-group">
               <label class="checkbox-inline"><input class="pieTops" id="chz" type="checkbox" name="Feta" value="Feta">Feta Cheese</label>
               <label class="checkbox-inline"><input class="pieTops" id="roni" type="checkbox" name="Pepperoni" value="Pepperoni">Pepperoni</label>
@@ -28,10 +34,7 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <span id="priceHide"></span>
-          <span id="topsHideOne"></span>
-          <span id="topsHideTwo"></span>
-          <span id="topsHideThree"></span>
+
         </div>
       </div>
     </div>

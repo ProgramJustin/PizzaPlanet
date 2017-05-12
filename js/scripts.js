@@ -1,9 +1,15 @@
-function Pizza(size, toppingOne) {
+function Pizza(size, tops) {
   this.size = size;
-  this.toppingOne = toppingOne;
+  this.tops = tops;
 }
-Pizza.prototype.size = function (size) {
-  this
+Pizza.prototype.addTopps() {
+
+}
+Pizza.prototype.cost = function (size) {
+   if(size === "Small") {
+
+     return 12;
+   }
 }
 
 $(document).ready(function() {
@@ -11,16 +17,20 @@ $(document).ready(function() {
 $("form").submit(function(event) {
   event.preventDefault();
 
-t = $(".pieSize").val();
-alert(this.size);
+this.size = $("input:radio:checked").val();
 
 
-var toppingCheese = $("#chz").val();
-var toppingRoni = $("#roni").val();
-var toppingPeppers = $("#bells").val();
+var toppingCheese = $("input:checkbox[name=Feta]:checked").val();
+var toppingRoni = $("input:checkbox[name=Pepperoni]:checked").val();
+var toppingPeppers = $("input:checkbox[name=Pepps]:checked").val();
 
-var newOrder = new Pizza(toppingCheese,toppingRoni, toppingPeppers);
-alert(newOrder.toppingCheese);
+alert(toppingCheese);
+s
+
+var newOrder = new Pizza(this.size, this.tops);
+newOrder.cost(this.size);
+alert(newOrder);
+console.log(newOrder);
 
   });
 });

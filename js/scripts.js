@@ -4,9 +4,9 @@ function Pizza(size, topsOne, topsTwo, topsThree) {
   this.topsTwo = topsTwo;
   this.topsThree = topsThree;
 }
-
 Pizza.prototype.cost = function(size, topsOne, topsTwo, topsThree) {
 
+    //COST FOR SMALL PIZZA
    if(size === "Small" && topsOne === "Feta" && topsTwo === "Pepperoni" && topsThree === "Peppers") {
      return 16;
 
@@ -19,10 +19,44 @@ Pizza.prototype.cost = function(size, topsOne, topsTwo, topsThree) {
        return 12;
 
     } else if (size === "small") {
-      return 11;
-    }
 
+      return 11;
+
+      //COST FOR MEDIUM PIZZA
+
+    } else if(size === "Medium" && topsOne === "Feta" && topsTwo === "Pepperoni" && topsThree === "Peppers") {
+      return 20;
+
+    } else if(size === "Medium" && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers") && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers")) {
+
+        return  17;
+
+      } else if (size === "Medium" && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers"))  {
+
+        return 15;
+
+     } else if (size === "Medium") {
+       return 14;
+
+       //COST FOR LARGE PIZZAS
+     } else if(size === "Large" && topsOne === "Feta" && topsTwo === "Pepperoni" && topsThree === "Peppers") {
+       return 24;
+
+     } else if(size === "Large" && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers") && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers")) {
+
+         return  20;
+
+       } else if (size === "Large" && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers"))  {
+
+         return 18;
+
+      } else if (size === "Large") {
+        return 17;
+      }
 }
+
+
+
 
 $(document).ready(function() {
 
@@ -38,9 +72,26 @@ var toppingPeppers = $("input:checkbox[name=Pepps]:checked").val();
 
 var newOrder = new Pizza(this.size, toppingCheese, toppingRoni, toppingPeppers);
 
-
-
 newOrder.price = newOrder.cost(this.size, toppingCheese, toppingRoni, toppingPeppers);
+
+
+  if (newOrder.size === "Small") {
+
+
+      // $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" +"<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+
+  } else if (newOrder.size === "Medium") {
+
+      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" +"<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+
+  } else if (newOrder.size === "Large") {
+
+      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" +"<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+
+  } else {
+    alert("wrong");
+  }
+
 
 console.log(newOrder);
 

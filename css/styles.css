@@ -19,8 +19,12 @@ h1 {
 }
 h3 {
   font-family: 'Fascinate', cursive;
-  font-size: 28px;
-  color: rgb(22,170,17);
+  font-size: 40px;
+  color: white;
+}
+h2 {
+  font-family: 'Fascinate', cursive;
+  font-size: 40px;
 }
 .row {
   height: 400px;
@@ -61,5 +65,16 @@ h3 {
     border-radius: 100%;
   }
   .col-md-12 {
-    text-align: center;
+    text-align: inline;
+  }
+  .specialGreen {
+    color: rgb(22,170,17);
+  }
+  .hidden {
+    display: none;
+    color: black;
+    background-color: white;
+    height: 350px;
+    width: 250px;
+
   }

@@ -78,7 +78,7 @@ $("form").submit(function(event) {
         newOrder.topsThree = "-";
       }
 
-      $(".col-md-12").append("<h3>" + newOrder.price + "</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
+      $(".col-md-12").append("<h3>" + newOrder.price + "$" + "</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
 
   } else if (newOrder.size === "Large") {
 
@@ -92,7 +92,7 @@ $("form").submit(function(event) {
           newOrder.topsThree = "-";
       }
 
-      $(".col-md-12").append("<h3>" + newOrder.price + "</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
+      $(".col-md-12").append("<h3>" + newOrder.price +  "$" +"</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
   } else {
     alert("PLEASE TRY AGAIN");
   }

@@ -18,7 +18,7 @@ Pizza.prototype.cost = function(size, topsOne, topsTwo, topsThree) {
 
        return 12;
 
-    } else if (size === "small") {
+    } else if (size === "Small") {
 
       return 11;
 
@@ -77,20 +77,71 @@ newOrder.price = newOrder.cost(this.size, toppingCheese, toppingRoni, toppingPep
 
   if (newOrder.size === "Small") {
 
+      if (newOrder.topsOne === undefined) {
 
-      // $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" +"<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+        newOrder.topsOne = "-";
 
-  } else if (newOrder.size === "Medium") {
+      }
+       if (newOrder.topsTwo === undefined) {
 
-      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" +"<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+        newOrder.topsTwo = "-";
+
+      }
+       if (newOrder.topsThree === undefined) {
+
+        newOrder.topsThree = "-";
+      }
+
+      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" + "<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+
+    } else if (newOrder.size === "Medium") {
+
+
+    if (newOrder.topsOne === undefined) {
+        newOrder.topsOne = "-";
+      }
+
+    if (newOrder.topsTwo === undefined) {
+
+        newOrder.topsTwo = "-";
+
+      }
+    if (newOrder.topsThree === undefined) {
+
+        newOrder.topsThree = "-";
+      }
+
+      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" + "<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
 
   } else if (newOrder.size === "Large") {
 
-      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" +"<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+      if (newOrder.topsOne === undefined) {
+        
+        newOrder.topsOne = "-";
+      }
+      if (newOrder.topsTwo === undefined) {
 
-  } else {
+        newOrder.topsTwo = "-";
+
+      }
+      if (newOrder.topsThree === undefined) {
+
+        newOrder.topsThree = "-";
+      }
+
+      $(".col-md-6").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" + "<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
+
+  }
+
+
+   else {
     alert("wrong");
   }
+
+  // if (newOrder.topsOne === undefined) {
+  //   $("#priceHide").hide();
+  // }
+  // $("#priceHide").hide();
 
 
 console.log(newOrder);

@@ -1,15 +1,27 @@
-function Pizza(size, tops) {
+function Pizza(size, topsOne, topsTwo, topsThree) {
   this.size = size;
-  this.tops = tops;
+  this.topsOne = topsOne;
+  this.topsTwo = topsTwo;
+  this.topsThree = topsThree;
 }
-Pizza.prototype.addTopps() {
 
-}
-Pizza.prototype.cost = function (size) {
-   if(size === "Small") {
+Pizza.prototype.cost = function(size, topsOne, topsTwo, topsThree) {
 
-     return 12;
-   }
+   if(size === "Small" && topsOne === "Feta" && topsTwo === "Pepperoni" && topsThree === "Peppers") {
+     return 16;
+
+    } else if(size === "Small" && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers") && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers")) {
+
+       return  14;
+
+     } else if (size === "Small" && (topsOne === "Feta" || topsTwo === "Pepperoni" || topsThree === "Peppers"))  {
+
+       return 12;
+
+    } else if (size === "small") {
+      return 11;
+    }
+
 }
 
 $(document).ready(function() {
@@ -24,12 +36,12 @@ var toppingCheese = $("input:checkbox[name=Feta]:checked").val();
 var toppingRoni = $("input:checkbox[name=Pepperoni]:checked").val();
 var toppingPeppers = $("input:checkbox[name=Pepps]:checked").val();
 
-alert(toppingCheese);
-s
+var newOrder = new Pizza(this.size, toppingCheese, toppingRoni, toppingPeppers);
 
-var newOrder = new Pizza(this.size, this.tops);
-newOrder.cost(this.size);
-alert(newOrder);
+
+
+newOrder.price = newOrder.cost(this.size, toppingCheese, toppingRoni, toppingPeppers);
+
 console.log(newOrder);
 
   });

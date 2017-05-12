@@ -1,6 +1,10 @@
+* {
+  text-align: center;
+}
 body {
   background-color: black;
 }
+
 .container-fluid {
   border: 1px solid red;
   height: 100%;
@@ -8,11 +12,50 @@ body {
   background-image: url("../img/pizzaplanet.jpg");
   background-size: 100% 100%;
   background-position: center;
+  color: white;
+}
+h1 {
+  font-size: 60px;
 }
 .row {
   height: 400px;
+  border: 2px solid pink;
 }
+.col-md-8 {
+  border: 2px solid yellow;
+  width: 100%;
+
+}
+
+.form-group {
+  border: 1px solid white;
+  margin: 10px;
+
+}
+/*input {
+
+}*/
 .col-md-6 {
   text-align: center;
   font-family: times;
+  border: 1px solid green;
 }
+#small {
+  color: white;
+  height: 150px;
+  background: white;
+  border-radius: 100%;
+}
+
+  #medium {
+    color: white;
+    height: 175px;
+    background: white;
+    border-radius: 100%;
+  }
+  #large {
+    color: white;
+    height: 200px;
+    background: white;
+    border-radius: 100%;
+  }

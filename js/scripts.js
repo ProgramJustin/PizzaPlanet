@@ -42,6 +42,7 @@ Pizza.prototype.cost = function(size, topsOne, topsTwo, topsThree) {
 }
 //FRONT-END LOGIC
 $(document).ready(function() {
+
 $("form").submit(function(event) {
   event.preventDefault();
   this.size = $("input:radio:checked").val();

@@ -16,11 +16,14 @@ body {
 h1 {
   font-size: 60px;
   font-family: 'Fascinate', cursive;
+  color: white;
+
 }
 h3 {
   font-family: 'Fascinate', cursive;
   font-size: 40px;
   color: white;
+  text-shadow: 2px 2px yellow;
 }
 h2 {
   font-family: 'Fascinate', cursive;
@@ -30,9 +33,7 @@ h2 {
   height: 400px;
 }
 .col-md-8 {
-
   width: 100%;
-
 }
 
 .form-group {
@@ -76,5 +77,4 @@ h2 {
     background-color: white;
     height: 350px;
     width: 250px;
-
   }

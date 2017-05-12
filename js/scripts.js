@@ -64,7 +64,7 @@ $("form").submit(function(event) {
       if (newOrder.topsThree === undefined) {
         newOrder.topsThree = "-";
       }
-      $(".col-md-12").append("<h3>" + newOrder.price + "</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
+      $(".col-md-12").append("<h1>" + newOrder.price + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" + "<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
   } else if (newOrder.size === "Medium") {
 
 
@@ -78,7 +78,7 @@ $("form").submit(function(event) {
         newOrder.topsThree = "-";
       }
 
-      $(".col-md-12").append("<h3>" + newOrder.price + "$" + "</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
+      $(".col-md-12").append("<h1>" + newOrder.price + "$" + "</h1>" + "<h1>" + newOrder.topsOne + "</h1>" + "<1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
 
   } else if (newOrder.size === "Large") {
 
@@ -92,7 +92,7 @@ $("form").submit(function(event) {
           newOrder.topsThree = "-";
       }
 
-      $(".col-md-12").append("<h3>" + newOrder.price +  "$" +"</h3>" + "<h3>" + newOrder.topsOne + "</h3>" + "<h3>" + newOrder.topsTwo + "</h3>" + "<h3>" + newOrder.topsThree + "</h3>");
+      $(".col-md-12").append("<h1>" + newOrder.price +  "$" +"</h1>" + "<h1>" + newOrder.topsOne + "</h1>" + "<h1>" + newOrder.topsTwo + "</h1>" + "<h1>" + newOrder.topsThree + "</h1>");
   } else {
     alert("PLEASE TRY AGAIN");
   }

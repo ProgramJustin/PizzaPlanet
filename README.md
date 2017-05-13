@@ -13,8 +13,8 @@
 |:-------------:|:-------------:|:-------------:|
 |  create an object constructor to make pizza objects | example: function Pizza() = {} | example: var pizza = new Pizza() |
 |  create a pizza object using a constructor that take in parameters: size and toppings | example: var pizza = new Pizza(size, toppings) | example: pizza.size = size pizza.toppings = toppings |
-| add prototype to calculate the cost of the pizza based on the size of the pizza object and how many toppings were ordered | example: Pizza.prototype.cost = function () { calculate cost } | example output: cost = 20$ |
-| add a function that appends a pizza order to the screen after user submits options | example: $(div).append(result) | example output: 20$ Feta Pepperoni |
+| add prototype to calculate the cost of the pizza based on the size of the pizza object and how many toppings | example: Pizza.prototype.cost = function () { calculate cost } | example output: cost = 20$ |
+| add a function that appends a pizza order to the screen | example: $(div).append(result) | example output: 20$ Feta Pepperoni |
 
 # COMPLETE SET-UP INSTRUCTIONS
 1. DOWNLOAD OR CLONE FROM REPOSITORY [Click here](https://github.com/ProgramJustin/PizzaPlanet)...

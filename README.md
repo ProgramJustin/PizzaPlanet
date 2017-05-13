@@ -18,8 +18,8 @@
 | add a function that appends a pizza order to the screen after user submits options | example: $(div).append(result) | example output: 20$ Feta Pepperoni |
 
 # COMPLETE SET-UP INSTRUCTIONS
-1. DOWNLOAD OR CLONE FROM REPOSITORY [Click here](https://github.com/ProgramJustin/PizzaPlanet/settings)...
-2. TO CLONE, TYPE: git clone https://github.com/ProgramJustin/PizzaPlanet/settings INTO YOUR TERMINAL
+1. DOWNLOAD OR CLONE FROM REPOSITORY [Click here](https://github.com/ProgramJustin/PizzaPlanet)...
+2. TO CLONE, TYPE: git clone https://github.com/ProgramJustin/PizzaPlanet INTO YOUR TERMINAL
 3. OPEN UP FOLDER _pizzaSite_
 4. DOUBLE-CLICK **index.html**
 

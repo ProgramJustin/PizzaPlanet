@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Fascinate|Geostar+Fill" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
@@ -9,29 +9,48 @@
     <title></title>
   </head>
   <body>
+    <!-- ROW ONE -->
     <div class="container-fluid">
       <div class="row">
-        <!-- SIZE OPTION -->
-        <div class="col-md-8">
-          <form action="index.html">
-            <div class="form-group">
-              <label class="radio-inline"><input class="pieSize" id="pieSmall" type="radio" name="optradio" value="Small"><h1>small</h1><img id="small" src="https://cdn1.iconfinder.com/data/icons/food-drinks-1-1/128/pizza-whole-2-512.png"></label>
-              <label class="radio-inline"><input class="pieSize" id="pieMedium" type="radio" name="optradio" value="Medium"><h1>Medium</h1><img id="medium" src="https://cdn1.iconfinder.com/data/icons/food-drinks-1-1/128/pizza-whole-2-512.png"></label>
-              <label class="radio-inline"><input class="pieSize" id="pieLarge" type="radio" name="optradio" value="Large" checked><h1>Large</h1><img id="large" src="https://cdn1.iconfinder.com/data/icons/food-drinks-1-1/128/pizza-whole-2-512.png"></label>
-            </div>
-            <!-- PIZZA OPTIONS -->
-            <div class="form-group">
-              <label class="checkbox-inline"><input class="pieTops" id="chz" type="checkbox" name="Feta" value="Feta"><h3 class="specialGreen">Feta Cheese</h3></label>
-              <label class="checkbox-inline"><input class="pieTops" id="roni" type="checkbox" name="Pepperoni" value="Pepperoni"><h3 class="specialGreen">Pepperoni</h3></label>
-              <label class="checkbox-inline"><input class="pieTops" id="bells" type="checkbox" name="Pepps" value="Peppers"><h3 class="specialGreen">Peppers</h3></label>
-            </div>
-            <button class="btn btn-danger" type="submit" name="Submit">Submit</button>
-          </form>
+        <div class="col-xs-12">
+          <h1 id="hideHeader">Pizza Planet</h1>
+          <div class="rocket"></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="hidden">
+      <!-- ROW TWO -->
+      <div class="row secondRow">
+        <div class="col-xs-3">
+          <div  id="colLeft" class="">
+          </div>
+            <div id="paragraphLeft" class="about">
+            <p>Pizza Planet is a family restaurant frequented by Andy Davis and his toys in Toy Story. ... After Woody spots a Pizza Planet delivery truck pulling into the gas station, he calls Buzz back, and the two hitch a ride in the truck and head to Pizza Planet. ..</p>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <h1 class="hideThisFirst" id="landed">You just landed on</h1>
+          <h1 class="hideThisFirst" id="pizzaHead">Pizza Planet!</h1>
+          <input class="center-block hideThisFirst" type="button" id="toMenu" value="MENU">
+          <form class="center-block hideForm" action="index.html">
+            <div class="form-group">
+              <label class="radio-inline"><input class="pieSize" id="pieSmall" type="radio" name="optradio" value="Small"><h1 class="underHeader">small 3.14</h1><img id="small" src="https://cdn1.iconfinder.com/data/icons/food-drinks-1-1/128/pizza-whole-2-512.png"></label>
+              <label class="radio-inline"><input class="pieSize" id="pieMedium" type="radio" name="optradio" value="Medium"><h1 class="underHeader">Medium 3.14</h1><img id="medium" src="https://cdn1.iconfinder.com/data/icons/food-drinks-1-1/128/pizza-whole-2-512.png"></label>
+              <label class="radio-inline"><input class="pieSize" id="pieLarge" type="radio" name="optradio" value="Large" checked><h1 class="underHeader">Large 3.14</h1><img id="large" src="https://cdn1.iconfinder.com/data/icons/food-drinks-1-1/128/pizza-whole-2-512.png"></label>
+            </div>
+
+             <div class="form-group">
+              <label class="checkbox-inline"><input class="pieTops" id="chz" type="checkbox" name="Feta" value="Feta"><h3 class="specialGreen">Milky Cheese</h3></label>
+              <label class="checkbox-inline"><input class="pieTops" id="roni" type="checkbox" name="Pepperoni" value="Pepperoni"><h3 class="specialGreen">Saturoni</h3></label>
+              <label class="checkbox-inline"><input class="pieTops" id="bells" type="checkbox" name="Pepps" value="Peppers"><h3 class="specialGreen">Space Peppers</h3></label>
+            </div>
+            <button class="btn btn-primary center-block" type="submit" name="Submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-xs-3">
+          <div id="colRight" class="">
+          </div>
+          <div class="about">
+            <p>After entering the restaurant, Woody finds Andy and calls to Buzz that they will jump into Molly's stroller, but Buzz, still believing to be a real Space Ranger, spots a rocket-shaped claw game, thinking it is a rocket Woody has promised that will take him to his destination (due to the way Woody was describing the stroller in a way Buzz would understand), and climb into the rocket, where he meets the Aliens. Woody has to climb into the claw game to get Buzz out, but Sid Phillips, who has been playing Whack-a-Mole, takes control of the claw and fishes Buzz, as well as Woody who has been holding onto Buzz's leg, out of the rocket (but not before he has fished one alien out). Buzz, Woody, and the alien are then taken to Sid's house to become his new toys.
+            </p>
           </div>
         </div>
       </div>

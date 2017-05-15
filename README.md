@@ -18,8 +18,8 @@
 
 # COMPLETE SET-UP INSTRUCTIONS
 1. DOWNLOAD OR CLONE FROM REPOSITORY [Click here](https://github.com/ProgramJustin/PizzaPlanet)...
-2. TO CLONE, TYPE: git clone https://github.com/ProgramJustin/PizzaPlanet INTO YOUR TERMINAL
-3. OPEN UP FOLDER _pizzaSite_
+2. TO CLONE, TYPE: git clone https://github.com/ProgramJustin/PizzaPlanet INTO YOUR TERMINAL AND PRESS ENTER.
+3. OPEN UP THE FOLDER _pizzaSite_
 4. DOUBLE-CLICK **index.html**
 
 * Copyright © 2017, Justin Gomez
